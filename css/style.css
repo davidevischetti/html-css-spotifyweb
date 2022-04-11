@@ -9,3 +9,47 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
+
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+#wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Stile barra di navigazione laterale */
+#nav-bar {
+    float: left;
+    width: 200px;
+    height: calc(100% - 100px);
+    background-color: #000;
+}
+
+/* Stile contenuto pagina */
+#content {
+    float: left;
+    width: calc(100% - 200px);
+    height: calc(100% - 100px);
+    background-color: #141922;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#content header {
+    width: 100%;
+    height: 80px;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+/* Stile barra gestione brani */
+#play-bar {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
+}
