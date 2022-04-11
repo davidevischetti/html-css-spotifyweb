@@ -111,12 +111,22 @@ h4 {
     position: relative;
 }
 
+/* Stile header */
 #content header {
-    width: 100%;
+    width: calc(100% - 200px);
     height: 70px;
-    background-color: #000;
-    opacity: 0.5;
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;   
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#content header h4 {
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin-right: 10px;
 }
 
 /* Stile barra gestione brani */
