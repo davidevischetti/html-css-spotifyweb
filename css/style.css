@@ -32,6 +32,11 @@ h2 {
     font-size: 1.8em;
 }
 
+a {
+    text-decoration: none;
+    color: #666;
+}
+
 #wrapper {
     width: 100%;
     height: 100vh;
@@ -161,6 +166,10 @@ h2 {
     margin-right: 20px;
 }
 
+#content .menu li a {
+    padding-bottom: 5px;
+}
+
 /* Stile sezioni playlist */
 #content .playlist {
     margin: 40px 20px;
@@ -232,6 +241,7 @@ h2 {
     height: 3px;
     background-color: #666;
     border-radius: 5px;
+    position: relative;
 }
 
 #play-bar .setts .volume div {
@@ -280,6 +290,7 @@ h2 {
     height: 3px;
     background-color: #666;
     border-radius: 5px;
+    position: relative;
 }
 
 #play-bar .time-bar div {
@@ -294,7 +305,7 @@ h2 {
 /* Hover barra di navigazione laterale */
 #nav-bar div ul li:hover {
     background-color: #222;
-    border-left: 3px solid green;
+    border-left: 3px solid #0c0;
 }
 
 #nav-bar ul li:hover,
@@ -315,4 +326,55 @@ h2 {
 #content .banner h4:hover {
     transform: scale(110%);
     cursor: pointer;
+}
+
+/* Hover menu */
+#content .menu a:hover {
+    cursor: pointer;
+    color: #fff;
+    border-bottom: 3px solid #0c0;   
+}
+
+/* Hover playlist */
+
+/* Hover player */
+#play-bar i:hover {
+    cursor: pointer;
+}
+
+#play-bar .songs i:hover {
+    color: #fff;
+}
+
+#play-bar .controls .fa-play-circle:hover {
+    transform: scale(120%);
+}
+
+#play-bar .time-bar:hover,
+#play-bar .volume:hover {
+    cursor: pointer;
+}
+
+#play-bar .time-bar:hover div,
+#play-bar .volume:hover div {
+    background-color: #0c0;
+    cursor: pointer;
+}
+
+#play-bar .time-bar h6,
+#play-bar .volume h6  {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: none;
+}
+
+#play-bar .time-bar:hover h6,
+#play-bar .volume:hover h6 {
+    display: block;
 }
