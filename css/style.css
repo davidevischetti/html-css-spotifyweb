@@ -47,9 +47,8 @@ h2 {
 #nav-bar {
     float: left;
     width: 200px;
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     background-color: #000;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
 }
@@ -57,6 +56,7 @@ h2 {
 #nav-bar .logo {
     height: 30px;
     margin: 20px 0;
+    margin-left: 20px;
 }
 
 #nav-bar ul {
@@ -64,15 +64,19 @@ h2 {
 }
 
 #nav-bar ul li {   
-    line-height: 20px;
-    margin-bottom: 5px;
+    line-height: 30px;
 }
 
 #nav-bar ul li span {
     vertical-align: middle;
 }
 
+#nav-bar .add {
+    margin-left: 20px;
+}
+
 #nav-bar .list {
+    margin-left: 20px;
     overflow-y: auto;
     height: 350px;
 }
@@ -82,6 +86,7 @@ h2 {
     color: #666;
     font-size: 20px;
     vertical-align: middle;
+    padding-left: 20px;
 }
 
 #nav-bar .fa-plus-square {
@@ -104,6 +109,10 @@ h2 {
 
 /* Stile account */
 #nav-bar .account {
+    margin: 0 20px;
+}
+
+#nav-bar .account div {
     display: flex;
     align-items: center;
     padding: 10px 0;
@@ -115,7 +124,7 @@ h2 {
 #content {
     float: left;
     width: calc(100% - 200px);
-    height: calc(100% - 100px);
+    height: calc(100vh - 100px);
     background-color: #141922;
     overflow-y: auto;
     position: relative;
@@ -278,4 +287,32 @@ h2 {
     height: 100%;
     background-color: #fff;
     border-radius: 5px;
+}
+
+/* Stile effetti hover */
+
+/* Hover barra di navigazione laterale */
+#nav-bar div ul li:hover {
+    background-color: #222;
+    border-left: 3px solid green;
+}
+
+#nav-bar ul li:hover,
+#nav-bar .add,
+#nav-bar .account {
+    cursor: pointer;
+}
+
+#nav-bar ul li:hover span,
+#nav-bar ul li:hover i,
+#nav-bar .add:hover span,
+#nav-bar .account:hover span,
+#nav-bar .account:hover i {
+    color: #fff;
+}
+
+/* Hover banner */
+#content .banner h4:hover {
+    transform: scale(110%);
+    cursor: pointer;
 }
