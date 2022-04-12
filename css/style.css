@@ -16,11 +16,20 @@ ul {
 }
 
 span {
-    color: #454545;
+    color: #666;
 }
 
 h4 {
     color: #fff;
+}
+
+h3 {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.8em;
 }
 
 #wrapper {
@@ -43,7 +52,6 @@ h4 {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 #nav-bar .logo {
@@ -66,19 +74,21 @@ h4 {
 
 #nav-bar .list {
     overflow-y: auto;
+    height: 350px;
 }
 
 /* Stile icone barra di navigazione */
 #nav-bar ul li i {
-    color: #454545;
+    color: #666;
     font-size: 20px;
     vertical-align: middle;
 }
 
 #nav-bar .fa-plus-square {
     font-size: 30px;
-    margin: 5px 0;
+    margin: 10px 0;
     vertical-align: middle;
+    margin-right: 10px;
 }
 
 #nav-bar .fa-arrow-alt-circle-down {
@@ -97,7 +107,7 @@ h4 {
     display: flex;
     align-items: center;
     padding: 10px 0;
-    border-top: 1px solid #454545;
+    border-top: 1px solid #666;
     margin-top: 10px;
 }
 
@@ -112,7 +122,7 @@ h4 {
 }
 
 /* Stile header */
-#content header {
+#content .banner {
     width: calc(100% - 200px);
     height: 70px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -122,11 +132,55 @@ h4 {
     justify-content: flex-end;
 }
 
-#content header h4 {
+#content .banner h4 {
     padding: 10px 30px;
     border: 1px solid #fff;
     border-radius: 20px;
     margin-right: 10px;
+}
+
+/* Stile menu */
+#content .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+#content .menu li {
+    margin-right: 20px;
+}
+
+/* Stile sezioni playlist */
+#content .playlist {
+    margin: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#content .playlist h2 {
+    width: 100%;
+}
+
+#content .playlist span {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#content figure {
+    width: 14%;
+    margin-top: 25px;
+    text-align: center;
+    margin-right: 2%;
+}
+
+#content figure img {
+    width: 100%;
+}
+
+#content figure h3 {
+    margin: 5px auto;
 }
 
 /* Stile barra gestione brani */
