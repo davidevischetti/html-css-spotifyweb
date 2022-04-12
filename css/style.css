@@ -184,7 +184,7 @@ h2 {
 }
 
 /* Stile barra gestione brani */
-#player {
+#play-bar {
     float: left;
     width: 100%;
     height: 100px;
@@ -195,8 +195,8 @@ h2 {
     padding: 0 10px;
 }
 
-/* Stile aside player */
-#player aside {
+/* Stile aside play-bar */
+#play-bar aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,28 +204,76 @@ h2 {
 }
 
 /* Stile brani */
-#player .songs img {
+#play-bar .songs img {
     width: 50px;
 }
 
-#player .songs i {
+#play-bar .songs i {
     color: #666;
     font-size: 1.5em;
 }
 
 /* Stile impostazioni */
-#player .setts i {
+#play-bar .setts i {
     color: #fff;
 }
 
-#player .setts .volume {
+#play-bar .setts .volume {
     width: 60%;
     height: 3px;
     background-color: #666;
     border-radius: 5px;
 }
 
-#player .setts .volume div {
+#play-bar .setts .volume div {
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Stile player */
+#play-bar .player {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#play-bar .controls {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#play-bar .controls i {
+    color: #fff;
+    font-size: 1.5em;
+    
+}
+
+#play-bar .controls .fa-play-circle {
+    font-size: 3em;
+}
+
+#play-bar .time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#play-bar .time-bar {
+    width: 80%;
+    height: 3px;
+    background-color: #666;
+    border-radius: 5px;
+}
+
+#play-bar .time-bar div {
     width: 30%;
     height: 100%;
     background-color: #fff;
