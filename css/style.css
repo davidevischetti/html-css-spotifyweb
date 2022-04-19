@@ -56,6 +56,7 @@ a {
     background-color: #000;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 #nav-bar .logo {
@@ -90,6 +91,7 @@ a {
     margin-left: 20px;
     overflow-y: auto;
     height: 350px;
+    margin-bottom: 100px;
 }
 
 /* Stile icone barra di navigazione */
@@ -121,6 +123,9 @@ a {
 /* Stile account */
 #nav-bar .account {
     margin: 0 20px;
+    position: fixed;
+    bottom: 100px;
+    width: 90%;
 }
 
 #nav-bar .account .user {
@@ -171,11 +176,21 @@ a {
 
 #content .menu li {
     margin-right: 20px;
-    /* margin-bottom: 20px; */
+    position: relative;
 }
 
 #content .menu li a {
     padding-bottom: 5px;
+}
+
+#content .menu li div {
+    position: absolute;
+    bottom: -5px;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background-color: #0c0;
+    display: none;
 }
 
 /* Stile sezioni playlist */
@@ -369,7 +384,10 @@ a {
 #content .menu a:hover {
     cursor: pointer;
     color: #fff;
-    border-bottom: 3px solid #0c0;   
+}
+
+#content .menu li:hover .border {
+    display: block;
 }
 
 /* Hover playlist */
@@ -443,6 +461,7 @@ a {
     #play-bar .songs img {
         width: 25px;
     }
+
 }
 
 /* Responsive 520px */
@@ -465,10 +484,6 @@ a {
     #nav-bar h4,
     #nav-bar .logo {
         display: none;
-    }
-
-    #nav-bar .account {
-        margin-top: 30px;
     }
 
     #nav-bar .account .user {
